@@ -1,0 +1,191 @@
+body {
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#heading {
+    font-family: 'Original Surfer', cursive;
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
+    color: white;
+}
+
+.header {
+
+    /*background-image:url('Images/Homepage/image7.jpg*/
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('Images/Homepage/image7.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+nav {
+    /* background-color: cyan; */
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: whitesmoke ;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: cyan;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.page-info {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.page-info h1 {
+    font-size: 62px;
+}
+
+.page-info p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.info-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.info-button:hover {
+    border: 1px solid cyan;
+    background: cyan;
+    transition: 1s;
+}
+
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.serv1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first-service {
+    flex-basis: 31%;
+    background-color: cyan;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.first-service:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(120deg,#2691d2, cyan);
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.contact {
+    margin: 100px auto;
+    width: 80%;
+    background:rgba(0, 0, 0, 0.6)url('Images/Homepage/image5.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact h1 {
+    color: whitesmoke;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.contact p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: whitesmoke;
+}

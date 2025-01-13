@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="Images\favicon.ico">
+    <title>PC Repairs</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images\PCRepairs logo.png" alt="logo"></a>
+
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="#">Support and Repairs</a></li>
+                    <li><a href="#">Shop</a></li> -->
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="log-in">
+        <h1>Sign-Up</h1>
+
+        <form action="login.html" method="post">
+
+            <div class="user">
+                <input type="text" autofocus required>
+                <span></span>
+                <label for="fname">Full Name</label>
+            </div>
+
+            <div class="user">
+                <input type="text" autofocus required>
+                <span></span>
+                <label for="fname">Surname</label>
+            </div>
+
+            <div class="user">
+                <input type="number" autofocus required>
+                <span></span>
+                <label for="fname">Contact Number</label>
+            </div>
+
+            <div class="user">
+                <input type="text" required>
+                <span></span>
+                <label for="username">Username</label>
+            </div>
+
+            <div class="user">
+                <input type="email" required>
+                <span></span>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="user">
+                <input type="text" autofocus required>
+                <span></span>
+                <label for="fname">Address</label>
+            </div>
+
+            <div class="user">
+                <input type="password" required>
+                <span></span>
+                <label for="password">Password</label>
+            </div>
+
+            <div class="user">
+                <input type="text" autofocus required>
+                <span></span>
+                <label for="fname">Full Name</label>
+            </div>
+
+            <div class="user">
+                <input type="text" autofocus required>
+                <span></span>
+                <label for="fname">Full Name</label>
+            </div>
+
+            <div class="user-pass">By signing up, you agree to our <strong>Terms , Privacy Policy and Cookies Policy.
+            </div>
+
+            <input type="submit" value="Sign-Up">
+
+            <div class="register">
+                Have an account? <a href="login.html">Log-In</a>
+            </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<?php if (isset($_REQUEST['submit'])) {
+    echo ($_REQUEST['email']);
+} ?>

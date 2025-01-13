@@ -1,0 +1,138 @@
+
+<!-- <?php
+    //get values from the form
+    
+    require_once("config.php");
+    if (isset($_REQUEST['login'])) 
+    {
+    
+
+        $usermail = $_REQUEST['uemail'];
+        $password = $_REQUEST['upwd'];
+    /*
+     $empemail = substr($usermail,0,2);
+
+     if( $empmail == "Emp")
+     {
+        $conn = mysqli_connect(Servername,Username,Password,Database) or die("Could not connect to database!");
+
+        $query = "SELECT * FROM users WHERE Email = '$usermail' AND SHA1(upwd) = '$password'";";
+        
+        $Results = mysqli_query($conn,$query) or die("Could not execute query!");
+        $row = mysqli_fetch_row($Results);
+
+        if ($row == 0) 
+        {
+            echo "<a style=\"color: red;\">Please verify if email is correct</a>";
+            header("Location:clientlogin.php");
+        }
+        else
+        {
+            header("Location: Dashboard.php")
+        }
+
+        mysqli_close($conn);
+     }
+     else
+     {
+        $conn = mysqli_connect(Servername,Username,Password,Database) or die("Could not connect to database!");
+
+        $query = "SELECT * FROM users WHERE uemail = '$usermail' AND SHA1(upwd) = '$password'";
+
+        $Results = mysqli_query($conn,$query) or die("Could not execute query!");
+
+        $row = mysqli_fetch_row($Results);
+
+        if ($row == 0) 
+        {
+           header("Location:clientlogin.php");
+        }
+
+        mysqli_close($conn);
+    
+    }
+
+    */
+    
+
+    $conn = mysqli_connect(Servername,Username,Password,Database) or die("Could not connect to database!");
+
+    $query = "SELECT * FROM users WHERE uemail = '$usermail' AND SHA1(upwd) = '$password'";
+
+    $Results = mysqli_query($conn,$query) or die("Could not execute query!");
+
+    $row = mysqli_fetch_row($Results);
+
+    if ($row == 0) {
+header("Location:clientlogin.php");
+    }
+
+
+    
+
+    mysqli_close($conn);
+
+    //echo "<strong style=\"color: red;\"> Username/Password is incorrect</strong>"; 
+    }
+    ?> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Dashboard
+
+    <!-- <?php
+                    require_once("config.php");
+                    $conn = mysqli_connect(Servername, Username, Password, Database) or die("Could not connect to database!");
+
+                    $query = "SELECT * from employees where Email = '$usermail'";
+                    $results = mysqli_query($conn, $query) or die("Could not execute query!");
+                    $row = mysqli_fetch_array($results);
+                    $Title = $row['JobTitle'];
+                
+                    if ($Title == "Manager")
+                    {  
+                        
+                            echo "<ul>";
+
+                                echo "<li><a href=\"newEmp.php\">Employees</a></li>";
+                                echo "<li><a href=\"reports.php?id={$row['Employee_ID']}\">Reports</a></li>";
+                                echo "<li><a href=\"index.html\">Exit</a></li>";
+
+                            echo "</ul>";
+                        
+                    mysqli_close($conn);
+                    }
+                    else
+                    {
+                        while($row = mysqli_fetch_array($results))
+                        {
+                            echo "<ul>";
+                                echo "Work environment";
+                                echo "<li><a href=\"logout.php\">Exit</a></li>";
+                                //echo "<li><a href=\"newEmp.php\">Add Employee</a></li>";
+                                //echo "<li><a href=\"reports.php?id={$row['Employee_ID']}\">Reports</a></li>";
+                                //echo "<li><a href=\"index.html\">Exit</a></li>";
+
+                            echo "</ul>";
+                        }
+                    mysqli_close($conn);
+                    }
+                   
+                    ?> -->

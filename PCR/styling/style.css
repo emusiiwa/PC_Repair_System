@@ -1,0 +1,140 @@
+body {
+    background-color: white;
+}
+
+nav {
+    border-radius: 7px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkgrey;
+}
+
+li a.active {
+    background-color: black;
+}
+
+header #admin {
+    float: right;
+}
+
+
+.admin {
+    min-height: 200px;
+    background-color: #f8f8ff;
+    border-radius: 7px;
+    padding: 3px 3px 30px 3px;
+    margin: 5px 0px 5px 0px;
+}
+
+
+table.contactDetails {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#add {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    background-color: grey;
+    border-radius: 7px;
+}
+
+footer p {
+    text-align: center;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer a {
+    color: red;
+}
+
+#slideshow {
+    overflow: hidden;
+    width: 100%;
+}
+
+#slideshow figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slideshow infinite;
+}
+
+
+#slideshow figure img {
+    width: 20%;
+    height: auto;
+    position: inherit;
+    float: left;
+}
+
+@keyframes slideshow {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    90% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
